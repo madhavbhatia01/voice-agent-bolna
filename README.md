@@ -1,7 +1,7 @@
 # Bolna AC Service Leads Dashboard
 
 ### 1. The Problem
-AC companies waste hours calling past customers right before summer to get bookings. It’s boring, repetitive work that ties up the team. Plus, taking notes on a call and manually logging appointment details usually leads to messy spreadsheets and mistakes. The goal here is to put the whole calling and booking process on autopilot so the business owner can just look at a dashboard and know exactly where to send their technicians today.
+AC servicing companies waste hours calling past customers right before summer to get bookings. It’s boring, repetitive work that ties up the team. Plus, taking notes on a call and manually logging appointment details usually leads to mistakes. The goal here is to put the whole calling and booking process on autopilot so the business owner can just look at a dashboard and know exactly where to send their technicians today, and prepare for the upcoming services.
 
 ### 2. The Workflow
 * **Trigger:** An operator simply types a customer’s phone number into the web dashboard to kick off the outreach.
