@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Call - AC Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <a href="index.html" class="nav-link">Leads Dashboard</a>
+        <a href="calls.html" class="nav-link active">Make a Call</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Initiate AI Call</h1>
+            <p>Trigger Bolna Voice Agent to manually call a specific phone number.</p>
+
+            <div class="call-action-box" style="margin-top: 3rem;">
+                <h3>Make a New Call</h3>
+                <div class="call-controls">
+                    <input type="text" id="phone-input" placeholder="e.g. +919000000000" />
+                    <button type="button" id="make-call-btn">Initiate Call</button>
+                </div>
+                <div id="call-status" class="call-status"></div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Include main script logic -->
+    <script src="app.js?v=11"></script>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <h3 style="color: #ef4444; margin-top: 0; font-size: 1.4rem;">Call Failed</h3>
+            <p id="error-modal-message" style="color: var(--text-secondary); line-height: 1.5;"></p>
+            <button id="close-modal-btn" class="modal-close-btn">Dismiss</button>
+        </div>
+    </div>
+</body>
+
+</html>

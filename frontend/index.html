@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Service Leads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <a href="index.html" class="nav-link active">Leads Dashboard</a>
+        <a href="calls.html" class="nav-link">Make a Call</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>AC Service Confirmed Leads</h1>
+            <p>Customers who discussed AC servicing and scheduled an appointment.</p>
+        </header>
+
+        <h2 style="margin-bottom: 1rem; font-size: 1.4rem; color: var(--text-primary); font-weight: 600;">Upcoming
+            Services</h2>
+        <div class="glass-panel" style="margin-bottom: 2.5rem;">
+            <div class="table-header row">
+                <div class="col">Phone Number</div>
+                <div class="col">Service Type</div>
+                <div class="col">Preferred Date</div>
+                <div class="col">Preferred Time</div>
+            </div>
+            <div id="leads-container" class="leads-list">
+                <!-- Leads will be injected here via JS -->
+                <div class="loading">Loading leads...</div>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 1rem; font-size: 1.4rem; color: var(--text-secondary); font-weight: 500;">Past
+            Services</h2>
+        <div class="glass-panel" style="opacity: 0.85;">
+            <div class="table-header row">
+                <div class="col">Phone Number</div>
+                <div class="col">Service Type</div>
+                <div class="col">Date Scheduled</div>
+                <div class="col">Time Scheduled</div>
+            </div>
+            <div id="past-leads-container" class="leads-list">
+                <!-- Past Leads will be injected here via JS -->
+                <div class="loading">Loading past leads...</div>
+            </div>
+        </div>
+        </main>
+    </div>
+
+    <script src="app.js?v=11"></script>
+</body>
+
+</html>

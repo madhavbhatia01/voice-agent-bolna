@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# SQLite Databases
+*.sqlite3
+leads.db
+
+# Mac OS
+.DS_Store
+
+# Web / Node / Logs
+npm-debug.log
+yarn-error.log
+
+# IDEs
+.vscode/
+.idea/
