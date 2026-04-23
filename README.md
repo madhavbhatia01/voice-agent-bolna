@@ -1,5 +1,20 @@
 # Bolna AC Service Leads Dashboard
 
+### 1. The Problem
+AC companies waste hours calling past customers right before summer to get bookings. It’s boring, repetitive work that ties up the team. Plus, taking notes on a call and manually logging appointment details usually leads to messy spreadsheets and mistakes. The goal here is to put the whole calling and booking process on autopilot so the business owner can just look at a dashboard and know exactly where to send their technicians today.
+
+### 2. The Workflow
+* **Trigger:** An operator simply types a customer’s phone number into the web dashboard to kick off the outreach.
+* **The Call:** The Bolna agent dials the customer, naturally pitches the seasonal AC service, and figures out what they need.
+* **Extraction:** The agent pulls out four specific details from the chat: whether they want the service (yes/no), the type of service (basic or deep clean), their preferred date, and the time slot (morning/afternoon).
+* **The Hand-off:** Bolna fires a webhook with that exact payload to my backend, which saves it straight into a SQLite database.
+* **The Dashboard:** The web app immediately updates the "Upcoming Services" table with the new booking. It auto-sorts by date and actively highlights jobs due today or tomorrow so the dispatch team knows exactly what to prep for next.
+
+### 3. The Outcome Metric
+**Core Focus:** Business owners can get back to what they actually do best—delivering high-quality AC service—rather than wasting hours on repetitive calls or risking a bad reputation because they forgot about a booking.
+
+***
+
 This is a full-stack web application built to integrate with the Bolna Voice Agent API. It handles webhook callbacks, stores scheduled leads in a SQLite database, and displays them on a frontend dashboard.
 
 The frontend consists of two main pages:
